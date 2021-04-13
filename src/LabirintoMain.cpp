@@ -27,10 +27,10 @@ int main() {
 	if (lab1.percorreLabirinto(lab1.getPosicaoEntrada()[0],
 			lab1.getPosicaoEntrada()[1])) {
 		cout << "Achei o FIM!!!!\n";
-		lab1.imprimeLabirinto("SAÍDA ENCONTRADA!");
+		lab1.imprimeLabirinto("SAÃDA ENCONTRADA!");
 	} else {
-		cout << "Não encontrei saída válida!\n";
-		lab1.imprimeLabirinto("SEM SOLUÇÃO");
+		cout << "NÃ£o encontrei saï¿½da vï¿½lida!\n";
+		lab1.imprimeLabirinto("SEM SOLUï¿½ï¿½O");
 	}
 	cout << "\nLabirinto Finalizado!" << endl;
 	delete &lab1;

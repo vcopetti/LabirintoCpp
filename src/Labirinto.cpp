@@ -32,7 +32,7 @@ Labirinto::Labirinto(string arq){
 			this->linhasTotal = stoi(conteudo);
 			getline(MyReadFile, conteudo);
 			this->colunasTotal = stoi(conteudo);
-			// não é moleza não
+			// nï¿½o ï¿½ moleza nï¿½o
 			this->maze = new char* [this->linhasTotal -1];
 			for(int i=0; i < this->colunasTotal; i++)
 				this->maze[i] = new char[this->colunasTotal -1];
@@ -55,9 +55,11 @@ Labirinto::Labirinto(string arq){
 		}
 	} catch(int numErro) {
 		if (numErro == 1)
-			cout << "[ERRO 1] Caractere [D] não localizado no arquivo: " << this->nomeArquivo << endl;
+			cout << "[ERRO 1] Caractere [D] nï¿½o localizado no arquivo: " << this->nomeArquivo << endl;
+			exit(0);
 		if (numErro == 2){
 			cout << endl << "[ERRO 2] Arquivo Inexistente" << endl;
+			exit(0);
 		}
 	}
 	MyReadFile.close();
@@ -124,7 +126,7 @@ int* Labirinto::getPosicaoEntrada(){
 void Labirinto::imprimeLabirinto(string mensagem){
 	ofstream arqSaida("OUT-" + this->nomeArquivo);
 
-	arqSaida << "===ANÁLISE DO ARQUIVO: " << this->nomeArquivo << "===" << endl << endl;
+	arqSaida << "===ANï¿½LISE DO ARQUIVO: " << this->nomeArquivo << "===" << endl << endl;
 	arqSaida << mensagem << endl;
 	arqSaida << "CAMINHO PERCORRIDO:" << endl;
 	arqSaida << getMaze();

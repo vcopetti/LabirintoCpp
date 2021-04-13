@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe arquivo de build ativo",
+			"command": "C:\\Users\\vinicius.copetti\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-O0",
+				"-g3",
+				"-Wall",
+				"-c",
+				"-fmessage-length=0",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.o",
+				"${fileDirname}\\${fileBasenameNoExtension}.cpp "
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compilador: C:\\Users\\vinicius.copetti\\MinGW\\bin\\g++.exe"
+		}
+	]
+}
