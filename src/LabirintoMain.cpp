@@ -16,7 +16,7 @@ using namespace std;
 
 int main() {
 	string nomeArq = "Labirinto1.txt";
-
+	
 	cout << "Labirinto Inicializado!" << endl;
 	cout << "Digite o nome do arquivo: ";
 	// cin >> nomeArq;
